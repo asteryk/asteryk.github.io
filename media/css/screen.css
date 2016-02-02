@@ -85,13 +85,13 @@ body>div {
     -moz-box-shadow: 0 0 10px 0 #cfcfcf;
     -webkit-box-shadow: 0 0 10px 0 #cfcfcf;
     box-shadow: 0 0 10px 0 #cfcfcf;
-    border-top: 6px solid #EE0000;
+    border-top: 6px solid #c9d9f0;
 }
 h1 {
     font-size: 28px;
     line-height: 28px;
     margin: 0 0 28px 0;
-	background-color: rgb(185, 34, 31);
+	background-color: #18B8F7;
 	color: #fff;
 	display: inline-block;
 	padding: 12px;
@@ -161,11 +161,11 @@ hr {
     margin: 0 0 22px 0;
 }
 a {
-    color: #EE0000;
+    color: #18B8F7;
 	text-decoration: none;
 }
 a:visited {
-    color: #B22222;
+    color: #18B8F7;
 	text-decoration: none;
 }
 a.ss-icon {
@@ -174,7 +174,7 @@ a.ss-icon {
 	color: #ccc;
 }
 a:hover {
-    color: #EE0000;
+    color: #c9d9f0;
 }
 em {
     font-style: italic;
@@ -256,7 +256,7 @@ footer a {
 margin: 1px;
 border: 1px solid rgba(1,1,1,0);
 border-bottom: 1px dashed #BBB;
-color: #B9221F;
+color: #18B8F7;
 text-decoration: none;
 }
 
