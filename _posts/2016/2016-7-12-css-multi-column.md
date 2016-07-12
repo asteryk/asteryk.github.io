@@ -13,7 +13,7 @@ tags:
 
 ###一边定宽，一边自适应
 
-![效果](http://i1.piimg.com/567571/c06b6df26d442e62.jpg)
+<img alt="效果图" src="http://i1.piimg.com/567571/c06b6df26d442e62.jpg" width="200px;" />
 
 1、float布局
 
@@ -240,6 +240,8 @@ CSS：
 > 而 float做不到左右等高，必须左右设置9999px的padding－bottom和－9999px的margin－bottom来撑开，然后用overflow：hidden截取掉
 
 ###多列等宽
+
+<img alt="效果图" src="http://i1.piimg.com/567571/46007da139544d89.jpg" width="200px;" />
 
 1、float
 
