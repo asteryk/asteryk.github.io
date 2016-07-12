@@ -211,7 +211,12 @@ dl .meta {
 }
 
 .listing-item,.listing-seperator{list-style-type:none;}
+.listing-item{
+	position: relative;
+}
 .listing-item a{
+	position: absolute;
+	left: 6em;
     padding:.2em 1em;
 
 }
@@ -284,4 +289,7 @@ footer a:hover {
 }
 hr{
     margin-bottom: 10px !important;
+}
+#cntvlive2-is-installed{
+	display: none;
 }
