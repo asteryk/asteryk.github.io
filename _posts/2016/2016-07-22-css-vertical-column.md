@@ -170,4 +170,19 @@ JS：
 
 ``````````````````````````````````
 
+>7-23日补充：玉林师兄说原生JS用clientHeight可以得到高度，这个我给我忘了，这样简单不少，sorry
+
+
+``````````````````````````````````
+    function getHeight(className) {
+        var dom = document.getElementsByClassName(className)[0];
+        var domHeight = dom.clientHeight;
+        return domHeight;
+    }
+    var containerHeight = getHeight('container');
+    document.getElementsByClassName('msc2')[0].style.height = String(containerHeight - 100) + 'px';
+
+``````````````````````````````````
+
+
 ###总结:没事实力不行还是要多实践多看书，少装硬逼多吹水（上面有写错的，实现不佳的，新的补充的欢迎告诉我：-））
