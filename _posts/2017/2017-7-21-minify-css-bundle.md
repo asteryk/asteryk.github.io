@@ -102,7 +102,7 @@ module.exports = {
 
 ### 缩短命名
 
-通过使用babel-plugin-react-css-modules 和 css-loader的相同逻辑来命名，我们可以按我们自己的想法随意改别类名，甚至是随机哈希。而更进一步，我想要更短的选择器类名来直接代替随机哈希。为了改变类名，我创建了一个类名入口然后用(incstr)[https://github.com/grabantot/incstr]来改写每个通过这个入口的不断增加的ID。
+通过使用babel-plugin-react-css-modules 和 css-loader的相同逻辑来命名，我们可以按我们自己的想法随意改别类名，甚至是随机哈希。而更进一步，我想要更短的选择器类名来直接代替随机哈希。为了改变类名，我创建了一个类名入口然后用[incstr](https://github.com/grabantot/incstr)来改写每个通过这个入口的不断增加的ID。
 
 这样就能改造出既短又唯一的类名。现在` .a_a `, ` .b_a `诸如此类的类名会代替
 ` .MovieView___movie-title___yvKVV `和` .MovieView___movie-description-with-summary-paragraph___yvKVV`
@@ -156,7 +156,7 @@ const generateScopedName = (localName, resourcePath) => {
 ### 使用作用域隔离进一步压缩文件束体积。
 
 我会加下划线_在CSS类名里去分割组件名和识别名称——这种区分方法有助于压缩。
-csso（CSS压缩工具）有作用域设置。作用域里定义了一个类名列表用于做一些专门的标记，即不同作用域的选择器不会选中污染同一个元素，这使得优化方案能更规范地修改规则。利用这个，使用(csso-webpack-plugin)[https://github.com/zoobestik/csso-webpack-plugin]来后期处理CSS的文件束。
+csso（CSS压缩工具）有作用域设置。作用域里定义了一个类名列表用于做一些专门的标记，即不同作用域的选择器不会选中污染同一个元素，这使得优化方案能更规范地修改规则。利用这个，使用[csso-webpack-plugin](https://github.com/zoobestik/csso-webpack-plugin)来后期处理CSS的文件束。
 
 
 ``````````````````````````````````
@@ -195,7 +195,7 @@ const getScopes = (ast) => {
   return Object.values(scopes);
 };
 
-````````````````````````````````
+``````````````````````````````````````
 
 ### 是否值得
 
