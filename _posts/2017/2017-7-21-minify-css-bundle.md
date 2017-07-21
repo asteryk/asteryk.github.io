@@ -151,7 +151,7 @@ const generateScopedName = (localName, resourcePath) => {
   return uniqueIdGenerator(componentName) + '_' + uniqueIdGenerator(localName);
 };
 
-``````````````````````````````
+``````````````````````````````````
 
 ### 使用作用域隔离进一步压缩文件束体积。
 
